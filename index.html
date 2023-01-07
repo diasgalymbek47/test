@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo"><img src="logo.webp" alt="logo"><span>Quiz</span></div>
+            <div class="name-site">
+                <h1>Quiz - Questions and answers</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <main class="main">
+                <div class="test-start">
+                    <h2>Добро пожаловать на наш сайт 👋</h2>
+                    <p>Тут вы сможете ответит на необычные вопросы. Удачи! )))</p>
+                    <button class="startBtn">Поехали!</button>
+                </div>
+
+                <div class="test hidden">
+                    <h2 class="question">Вопрос</h2>
+                    <div>
+                        <input type="radio" name="answer" value="1" id="answerRadio" checked>
+                        <span id="answer">Ответ</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="answer" value="2" id="answerRadio">
+                        <span id="answer">Ответ</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="answer" value="3" id="answerRadio">
+                        <span id="answer">Ответ</span>
+                    </div>
+                    <button class="sendBtn">Ответит</button>
+                </div>
+            </main>
+
+            <aside class="aside">
+                <div class="info">
+                    Здесь будет отображаться ваши
+                </div>
+                <label for="result">Результаты</label>
+                <ul class="result hidden" id="result">
+
+                </ul>
+            </aside>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
